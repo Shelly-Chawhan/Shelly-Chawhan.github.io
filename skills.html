@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Skills - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #2C2C2C;
+            color: #F2F2F2;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            background-color: #3c3939;
+            padding: 0 20px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 26px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: pink;
+        }
+
+        nav ul li a:hover {
+            color: white;
+            font-size: 1.05rem;
+        }
+
+        .left {
+            display: flex;
+            align-items: center;
+            font-size: 1.5rem;
+        }
+
+        .left img {
+            height: 60px;
+            width: 60px;
+            margin-right: 10px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        main {
+            margin: 80px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .skills-section {
+            width: 80%;
+            margin: 40px 0;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            text-align: center;
+            color: pink;
+            margin-bottom: 20px;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .skill {
+            background-color: #3c3939;
+            margin: 15px;
+            padding: 20px;
+            border-radius: 10px;
+            width: 200px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .skill:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .skill h3 {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        .skill p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <img src="PortfolioLogo.jpeg" alt="Logo">
+                Shelly Chawhan
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About Me</a></li>
+                    <li><a href="/skills.html">Skills</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="skills-section">
+            <h2 class="section-title">Programming Languages</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <h3>C#</h3>
+                    <p>Object-oriented programming language for Windows applications.</p>
+                </div>
+                <div class="skill">
+                    <h3>Java</h3>
+                    <p>Widely used for building cross-platform applications.</p>
+                </div>
+                <div class="skill">
+                    <h3>HTML</h3>
+                    <p>Markup language for creating web pages.</p>
+                </div>
+                <div class="skill">
+                    <h3>CSS</h3>
+                    <p>Style sheet language for styling web pages.</p>
+                </div>
+                <div class="skill">
+                    <h3>JavaScript</h3>
+                    <p>Dynamic scripting language for interactive web content.</p>
+                </div>
+                <div class="skill">
+                    <h3>PHP</h3>
+                    <p>Server-side scripting language for web development.</p>
+                </div>
+                <div class="skill">
+                    <h3>iOS (Swift)</h3>
+                    <p>Programming language for iOS app development.</p>
+                </div>
+                <div class="skill">
+                    <h3>WordPress</h3>
+                    <p>Content management system for creating websites.</p>
+                </div>
+                <div class="skill">
+                    <h3>Python</h3>
+                    <p>High-level programming language known for its readability.</p>
+                </div>
+                <div class="skill">
+                    <h3>Android Development</h3>
+                    <p>Building mobile applications for Android devices.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills-section">
+            <h2 class="section-title">Frameworks</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <h3>.NET</h3>
+                    <p>Framework for building various applications.</p>
+                </div>
+                <div class="skill">
+                    <h3>ASP.NET Core</h3>
+                    <p>Framework for building web applications and services.</p>
+                </div>
+                <div class="skill">
+                    <h3>Entity Framework</h3>
+                    <p>ORM framework for working with databases in .NET.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills-section">
+            <h2 class="section-title">Database Management Tools</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <h3>SQL Server Management Studio</h3>
+                    <p>Tool for managing SQL Server databases.</p>
+                </div>
+                <div class="skill">
+                    <h3>MySQL Workbench</h3>
+                    <p>Unified tool for database design and management.</p>
+                </div>
+                <div class="skill">
+                    <h3>Oracle Database</h3>
+                    <p>Comprehensive database management system.</p>
+                </div>
+                <div class="skill">
+                    <h3>phpMyAdmin</h3>
+                    <p>Web-based tool for managing MySQL databases.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills-section">
+            <h2 class="section-title">Office Applications</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <h3>Microsoft Teams</h3>
+                    <p>Collaboration platform for team communication.</p>
+                </div>
+                <div class="skill">
+                    <h3>MS Excel</h3>
+                    <p>Spreadsheet software for data analysis.</p>
+                </div>
+                <div class="skill">
+                    <h3>PowerPoint</h3>
+                    <p>Presentation software for creating slideshows.</p>
+                </div>
+                <div class="skill">
+                    <h3>MS Word</h3>
+                    <p>Word processing software for creating documents.</p>
+                </div>
+                <div class="skill">
+                    <h3>Office 365</h3>
+                    <p>Cloud-based productivity suite by Microsoft.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills-section">
+            <h2 class="section-title">Software Tools</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <h3>Visual Studio 2022</h3>
+                    <p>Integrated development environment for .NET development.</p>
+                </div>
+                <div class="skill">
+                    <h3>IntelliJ IDEA</h3>
+                    <p>Java IDE for developing Android and web applications.</p>
+                </div>
+                <div class="skill">
+                    <h3>Visual Studio Code</h3>
+                    <p>Source code editor with rich extensions for various languages.</p>
+                </div>
+                <div class="skill">
+                    <h3>Eclipse</h3>
+                    <p>IDE primarily for Java development.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
