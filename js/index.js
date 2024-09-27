@@ -1,7 +1,7 @@
 const sentence = ["Hi,", "My", "name", "is", "Shelly!"];
 let i = 0;
-const wordSpeed = 500; // Delay between each word
-const startDelay = 500; // Delay before typing starts
+const wordSpeed = 400; 
+const startDelay = 500; 
 
 function typeWriter() {
     if (i < sentence.length) {
