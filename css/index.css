@@ -66,11 +66,134 @@ nav ul li a:hover {
 .leftSection {
     font-size: 3rem;
 }
+.profile-container {
+    position: absolute; /* This helps position the image */
+    top: 20px; /* Adjust as needed for spacing from the navbar */
+    left: 20px; /* Adjust as needed for spacing from the left */
+}
+
+.profile-pic {
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Keep height equal to width for a circle */
+    border-radius: 50%; /* Makes it circular */
+    object-fit: cover; /* Ensures the image covers the container */
+    display: block; /* Makes it block level */
+    margin-bottom: 20px; /* Adds space below the image */
+}
+/* Biography Section Styling */
+.biography {
+    margin: 40px 20px;
+    padding: 20px;
+    border: 1px solid #F2F2F2;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    animation: fadeIn 1s ease; /* Fade-in effect */
+}
+
+.biography h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: pink;
+}
+
+.biography p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify; /* Justifies the text */
+}
+
+/* Flexbox layout for biography and projects sections */
+.biography-projects {
+    display: flex;
+    justify-content: space-between; /* Aligns children to left and right */
+    margin: 40px; /* Space around the section */
+}
+
+.my-journey, .about-projects {
+    width: 45%; /* Each section takes up 45% of the width */
+}
+
+h2 {
+    margin-bottom: 20px; /* Space below the headings */
+}
+
+ul {
+    list-style-type: none; /* Removes bullets */
+    padding: 0; /* Removes default padding */
+}
+
+ul li {
+    margin-bottom: 10px; /* Space between each project */
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
 .pink {
     color: pink;
 }
+a {
+    color: pink; /* Change this to your desired color */
+    text-decoration: none; /* Removes the underline */
+}
+
+a:hover {
+    color: white; /* Change this to your desired hover color */
+}
+
+
+
 
 .rightSection img {
-    width: 90%;
+    width: 90%; 
 }
+footer {
+    background-color: #3c3939; /* Same color as navbar */
+    color: #F2F2F2; /* Text color */
+    text-align: center; /* Centered text */
+    padding: 20px 0; /* Space around the footer */
+    position: relative; /* Ensure footer does not overlap */
+}
+
+.footer-content {
+    max-width: 1200px; /* Max width for content */
+    margin: 0 auto; /* Center content */
+}
+
+.social-links {
+    list-style: none; /* No bullets for list */
+    padding: 0; /* No padding */
+}
+
+.social-links li {
+    display: inline; /* Inline display for horizontal alignment */
+    margin: 0 15px; /* Space between links */
+}
+
+.social-links li a {
+    text-decoration: none; /* Remove underline */
+    color: pink; /* Link color */
+}
+
+.social-links li a:hover {
+    color: white; /* Change color on hover */
+}
+.icons {
+    margin: 10px 0; /* Space above and below icons */
+}
+
+.icons img {
+    margin: 0 10px; /* Space between icons */
+    vertical-align: middle; /* Align icons in the middle */
+}
+
+
+
+
