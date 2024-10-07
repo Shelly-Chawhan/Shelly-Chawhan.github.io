@@ -105,3 +105,26 @@ nav ul li a:hover {
 .project-info a:hover {
     background-color: rgb(239, 149, 164); /* Darker shade on hover */
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Stack items vertically */
+        height: auto; /* Auto height */
+        padding: 10px; /* Adjust padding */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation items */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Adjust margin */
+    }
+
+   
+
+    .footer-content {
+        padding: 0 10px; /* Adjust padding */
+    }
+}

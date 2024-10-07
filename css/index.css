@@ -65,21 +65,25 @@ nav ul li a:hover {
 
 .leftSection {
     font-size: 3rem;
+    margin-top: 200px;
 }
+
 .profile-container {
     position: absolute; /* This helps position the image */
-    top: 20px; /* Adjust as needed for spacing from the navbar */
+    top: 80px; /* Adjusted for spacing from the navbar */
     left: 20px; /* Adjust as needed for spacing from the left */
 }
 
 .profile-pic {
-    width: 150px; /* Adjust size as needed */
-    height: 150px; /* Keep height equal to width for a circle */
+    width: 200px; /* Adjust size as needed */
+    height: 200px; /* Keep height equal to width for a circle */
     border-radius: 50%; /* Makes it circular */
     object-fit: cover; /* Ensures the image covers the container */
     display: block; /* Makes it block level */
-    margin-bottom: 20px; /* Adds space below the image */
+    margin-bottom: 50px;
+    margin-top: 30px; /* Adds space below the image */
 }
+
 /* Biography Section Styling */
 .biography {
     margin: 40px 20px;
@@ -109,7 +113,8 @@ nav ul li a:hover {
     margin: 40px; /* Space around the section */
 }
 
-.my-journey, .about-projects {
+.my-journey,
+.about-projects {
     width: 45%; /* Each section takes up 45% of the width */
 }
 
@@ -139,6 +144,7 @@ ul li {
 .pink {
     color: pink;
 }
+
 a {
     color: pink; /* Change this to your desired color */
     text-decoration: none; /* Removes the underline */
@@ -148,12 +154,10 @@ a:hover {
     color: white; /* Change this to your desired hover color */
 }
 
-
-
-
 .rightSection img {
-    width: 90%; 
+    width: 90%;
 }
+
 footer {
     background-color: #3c3939; /* Same color as navbar */
     color: #F2F2F2; /* Text color */
@@ -185,6 +189,7 @@ footer {
 .social-links li a:hover {
     color: white; /* Change color on hover */
 }
+
 .icons {
     margin: 10px 0; /* Space above and below icons */
 }
@@ -195,5 +200,76 @@ footer {
 }
 
 
+/* Responsive Styles */
+@media (max-width: 768px) {
+
+    .left {
+        font-size: 1.2rem; /* Smaller font size for mobile */
+    }
+
+    .leftSection {
+        font-size: 2rem; /* Adjusted size for mobile */
+    }
+
+    .biography h2 {
+        font-size: 1.5rem; /* Smaller heading size for mobile */
+    }
+
+    .biography p {
+        font-size: 0.9rem; /* Smaller text for mobile */
+    }
+    nav {
+        flex-direction: column; /* Stack items vertically */
+        height: auto; /* Auto height */
+        padding: 10px; /* Adjust padding */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation items */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Adjust margin */
+    }
+
+    .contact-container {
+        margin: 20px; /* Adjust margin for smaller screens */
+        padding: 15px; /* Adjust padding */
+    }
+
+    .footer-content {
+        padding: 0 10px; /* Adjust padding */
+    }
+}
 
 
+@media (max-width: 768px) {
+  
+
+    .profile-pic {
+        width: 100px; /* Adjust profile picture size for mobile */
+        height: 100px; /* Maintain aspect ratio */
+    }
+
+    .rightSection img {
+        width: 100%; /* Make images responsive */
+    }
+
+    nav {
+        flex-direction: column; /* Stack items vertically */
+        height: auto; /* Auto height */
+        padding: 10px; /* Adjust padding */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation items */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Adjust margin */
+    }
+
+    .footer-content {
+        padding: 0 10px; /* Adjust padding */
+    }
+}

@@ -10,8 +10,10 @@ function typeWriter() {
         setTimeout(typeWriter, wordSpeed);
     }
 }
-
-// Delay typing effect to improve user experience
 window.onload = function() {
     setTimeout(typeWriter, startDelay);
 };
+
+
+
+

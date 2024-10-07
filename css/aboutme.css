@@ -154,3 +154,36 @@ nav ul li a:hover {
         font-size: 1rem;
     }
 }
+
+@media (max-width: 768px) {
+ 
+    nav {
+        flex-direction: column; /* Stack items vertically */
+        height: auto; /* Auto height */
+        padding: 10px; /* Adjust padding */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation items */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Adjust margin */
+    }
+
+
+
+    .aboutSection h1 {
+        font-size: 2.5rem;
+    }
+
+    .aboutSection p {
+        font-size: 1rem;
+    }
+
+    .left {
+        font-size: 1.2rem; /* Smaller logo text on mobile */
+    }
+
+    
+}
