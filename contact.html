@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,8 +8,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="css/contact.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-</head>
 
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "Qnw7ypK2ZiHkHGfao",
+        });
+    })();
+    </script>
+</head>
 <body>
     <header>
         <nav>
@@ -49,7 +58,7 @@
                     <label for="message">Message:</label>
                     <textarea id="message" name="message" required></textarea>
                 </div>
-                <input type="submit" value="Send Message">
+                <input type="submit"  value="Send Message">
             </form>
         </div>
     </main>
@@ -67,8 +76,8 @@
             <p>&copy; 2024 Shelly Chawhan. All rights reserved.</p>
         </div>
     </footer>
-    <!-- Include JavaScript at the end of the body -->
+    
+    <!-- Include your custom JavaScript file -->
     <script src="js/contact.js"></script>
 </body>
-
 </html>

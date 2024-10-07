@@ -45,9 +45,25 @@ document.getElementById('contactForm').addEventListener('submit', function(event
         return;
     }
 
-    // If all validations pass, you can submit the form
-    alert("Form submitted successfully!");
-
-    // To actually submit the form, uncomment the line below:
-    // this.submit();
+    // If all validations pass, send the email
+    sendMail();
 });
+
+function sendMail(){
+    let parms = {
+        name : document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        subject: document.getElementById("subject").value,
+        message: document.getElementById("message").value,
+    };
+
+    // Call the emailjs send function
+    emailjs.send("service_90o2yup","template_3bq88ia",parms)
+    .then(function(response) {
+        // Show success message if email was sent successfully
+        alert("Message sent successfully!");
+    }, function(error) {
+        // Show error message if email could not be sent
+        alert("Failed to send message: " + error.text);
+    });
+}
