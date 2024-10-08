@@ -53,13 +53,14 @@ nav ul li a:hover {
     border-radius: 50%;
     object-fit: cover;
 }
+
 .container {
     max-width: 1200px; /* Maximum width of the container */
     margin: 20px auto; /* Centering the container with some margin on top and bottom */
     padding: 20px; /* Padding inside the container */
     display: grid; /* Using grid layout for project cards */
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
-    gap: 20px; /* Space between project cards */
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 50px; /* Space between project cards */
 }
 
 .project {
@@ -77,7 +78,17 @@ nav ul li a:hover {
 .project img {
     width: 100%; /* Image takes full width of the card */
     height: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+    
 }
+.project img {
+    width: 100%; /* Adjust to fit the container */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 500px; /* Set a maximum height to keep images uniform */
+    object-fit: cover; /* Cover the area while maintaining aspect ratio */
+    border-radius: 50px; /* Optional: to give a nice rounded corner effect */
+}
+
 
 .project-info {
     padding: 15px; /* Padding for project information */
@@ -122,9 +133,59 @@ nav ul li a:hover {
         margin: 10px 0; /* Adjust margin */
     }
 
-   
+    .container {
+        grid-template-columns: 1fr; /* One column for smaller screens */
+    }
 
     .footer-content {
         padding: 0 10px; /* Adjust padding */
     }
+}
+
+footer {
+    background-color: #3c3939; /* Same color as navbar */
+    color: #F2F2F2; /* Text color */
+    text-align: center; /* Centered text */
+    padding: 20px 0; /* Space around the footer */
+    position: relative; /* Ensure footer does not overlap */
+    width: 100%; /* Ensure it takes full width */
+    bottom: 0; /* Stick to the bottom */
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px; /* Max width for content */
+    margin: 0 auto; /* Center content */
+    padding: 0 20px; /* Add some padding to the sides */
+    text-align: center;
+}
+
+.social-links {
+    list-style: none; /* No bullets for list */
+    padding: 0; /* No padding */
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: center; /* Center the list items */
+}
+
+.social-links li {
+    margin: 0 15px; /* Space between links */
+}
+
+.social-links li a {
+    text-decoration: none; /* Remove underline */
+    color: pink; /* Link color */
+}
+
+.social-links li a:hover {
+    color: white; /* Change color on hover */
+}
+
+.icons {
+    margin: 10px 0; /* Space above and below icons */
+    text-align: center; /* Center the icons */
+}
+
+.icons img {
+    margin: 0 10px; /* Space between icons */
+    vertical-align: middle; /* Align icons in the middle */
 }
