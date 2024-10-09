@@ -51,7 +51,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
 
 function sendMail(name, email, subject, message) {
     let params = {
-        from_email: email, // Capture the sender's email
+        email: email, // Capture the sender's email
         name: name,        // Capture the sender's name
         subject: subject,  // Capture the email subject
         message: message,  // Capture the email message
