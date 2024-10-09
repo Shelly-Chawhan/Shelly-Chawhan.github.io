@@ -1,6 +1,6 @@
 const sentence = ["Hi,", "My", "name", "is", "Shelly!"];
 let i = 0;
-const wordSpeed = 400; 
+const wordSpeed = 150; 
 const startDelay = 500; 
 
 function typeWriter() {
