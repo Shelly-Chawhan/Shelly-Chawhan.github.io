@@ -46,19 +46,19 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     }
 
     // If all validations pass, send the email
-    sendMail(name, email, subject, message);
+    sendMail();
 });
 
-function sendMail(name, email, subject, message) {
-    let params = {
-        from_email: email, // Set the sender's email
-        name: name,        // Set the sender's name
-        subject: subject,  // Set the email subject
-        message: message,  // Set the email message
+function sendMail(){
+    let parms = {
+        name : document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        subject: document.getElementById("subject").value,
+        message: document.getElementById("message").value,
     };
 
     // Call the emailjs send function
-    emailjs.send("service_90o2yup", "template_3bq88ia", params)
+    emailjs.send("service_90o2yup","template_3bq88ia",parms)
     .then(function(response) {
         // Show success message if email was sent successfully
         alert("Message sent successfully!");
